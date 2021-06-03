@@ -46,6 +46,9 @@ public class LinkedList {
     return first == null;
   }
 
+
+
+
   public int indexOf(int item) {
     int index = 0;
     var current = first;

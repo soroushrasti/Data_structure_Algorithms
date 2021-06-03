@@ -80,7 +80,18 @@ public class LinkedLists {
        size--;
 
     }
-
+    public int getKthFormEnd(int k){
+        var first_p=first;
+        var sec_p=first;
+        for (int i = 0; i < k ; i++) {
+            sec_p=sec_p.next;
+        }
+        while(sec_p != null){
+            sec_p=sec_p.next;
+            first_p=first_p.next;
+        }
+        return first_p.value;
+    }
     private Node getPrevious (Node node){
         var current=first;
         while (current !=null){
