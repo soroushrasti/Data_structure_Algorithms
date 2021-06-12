@@ -1,14 +1,16 @@
 package com.codewithmosh.stack;
 
-import com.codewithmosh.Stack;
+import com.codewithmosh.MinStack;
 
 public class Main {
     public static void main(String[] args){
-        Stack stack= new Stack();
-        stack.push(3);
-        stack.push(5);
+        MinStack items = new MinStack();
+        items.push(3);
+        items.push(4);
+        items.push(1);
+        items.pop();
 
-        System.out.println(stack.pop());
+        System.out.println(items.min());
     }
 
 }
